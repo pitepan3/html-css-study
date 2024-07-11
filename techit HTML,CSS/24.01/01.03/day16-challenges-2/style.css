@@ -1,0 +1,196 @@
+/* Resets */
+body {
+    margin: unset;
+}
+
+h1, h2, p {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Layouts */
+.l_wrapper {
+    max-width: 1080px;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.l_row {
+    display: flex;
+}
+
+.l_col {
+    width: 33.3333%;
+    height: 600px;
+}
+
+/* Variables */
+:root {
+    --color-purple-rgb: 10 10 10;
+
+    --color-purple: rgb(var(--color-purple-rgb));
+}
+/* Components */
+body {
+    background-color: black;
+
+}.header-title button{
+    font-size: 40px;
+    font-weight: 700;
+    color: #666;
+    border-bottom: 8px solid #666;
+    display: inline-block;
+    line-height: 1.4em;
+    letter-spacing: 0.4em;
+    margin: 20px 0;
+}
+
+.card-cover {
+    height: 100%;
+    
+    display: flex;
+    transition: .4s;
+}
+
+.card-cookie {
+    background-image: url(images/bg-cookie.png);
+    opacity: .5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-cake {
+    background-image: url(images/bg-cake.png);
+    opacity: .5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-crepe {
+    background-image: url(images/bg-crepe.png);
+    opacity: .5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-contents {
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgb( var(--color-purple-rgb) / .9 );
+    color: gray;
+    margin: 300px auto 50px auto;
+    border-radius: 20px;
+    width: 240px;
+    overflow: hidden;
+}
+
+.card-contents-description {
+    width: 420px;
+    font-size: 20px;
+}
+
+.card-contents-title {
+    padding-bottom: 20px;
+    color: orangered;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.cookie:hover .card-contents{
+    width: 420px;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: unset;
+    transition: .4s;
+    z-index: 9999;
+}
+
+.card-cookie:hover {
+    opacity: 1;
+    width: 50%;
+    transition: .4s;
+}
+
+.cake:hover .card-contents{
+    width: 420px;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: unset;
+    transition: .4s;
+    z-index: 9999;
+}
+
+.card-cake:hover {
+    opacity: 1;
+    width: 50%;
+    transition: .4s;
+}
+
+.crepe:hover .card-contents{
+    width: 420px;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: unset;
+    transition: .4s;
+    z-index: 9999;
+}
+
+.card-crepe:hover {
+    opacity: 1;
+    width: 50%;
+    transition: .4s;
+}
+
+.about {
+    color: white;
+    height: 600px;
+    min-width: 1080px;
+    position: absolute;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 100px;
+    left: 0;
+    transform: rotateX(-90deg);
+    transition: 1s;
+    transform-origin: left top;
+
+}
+
+:root.nextpage .about {
+    transform: rotateX(0);
+    transition: 1s;
+}
+
+.about-contents {
+    background-color: black;
+    opacity: .8;
+    width: 90%;
+    height: 50%;
+    margin: 50px auto auto auto;
+}
+
+.about-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: gold;
+}
+
+.about-description {
+    width: auto;
+    padding: 30px;
+    font-size: 20px;
+    color: gray;
+}
